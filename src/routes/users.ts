@@ -14,7 +14,7 @@ import {
 const router = express.Router();
 
 const limitAccess = rateLimit({
-  max: process.env.NODE_ENV === "test" ? 10 : 1,
+  max: process.env.NODE_ENV === "test" ? 10 : 3,
   windowMs: 15000,
   message: "Too many login attempts, Try after 15 seconds",
 });
