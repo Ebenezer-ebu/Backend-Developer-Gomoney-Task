@@ -5,4 +5,7 @@ Link to the hosted application live on Heroku (https://ebbymatchfixtures.herokua
 
 Link to documentation (https://documenter.getpostman.com/view/18156923/UzkTXwaq)
 
+## Docker Image
+ebuka1234/fixtures
+
 
