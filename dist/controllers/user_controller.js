@@ -71,8 +71,8 @@ const loginUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
             }
             const { _id, email, isAdmin } = user;
             const token = yield (0, auth_1.generateToken)({ _id, email, isAdmin }, process.env.SECRET_KEY);
-            // Store it on session object
-            req.session.user = { id: _id, email, isAdmin };
+            // // Store it on session object
+            // req.session.user = { id: _id, email, isAdmin };
             return res.status(200).json({
                 message: "Login successful",
                 token,

@@ -71,8 +71,8 @@ export const loginUser = async (req: Request, res: Response) => {
         process.env.SECRET_KEY!
       );
 
-      // Store it on session object
-      req.session.user = { id: _id, email, isAdmin };
+      // // Store it on session object
+      // req.session.user = { id: _id, email, isAdmin };
 
       return res.status(200).json({
         message: "Login successful",
