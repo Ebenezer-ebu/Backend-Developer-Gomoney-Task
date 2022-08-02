@@ -22,6 +22,6 @@ const limitAccess = rateLimit({
 /* GET users listing. */
 router.post("/admin_signup", validateCreateUser, createAdmin);
 router.post("/user_signup", validateCreateUser, createUser);
-router.post("/user_login", limitAccess, validateLoginUser, loginUser);
+router.post("/user_login", validateLoginUser, loginUser);
 
 export = router;
