@@ -72,6 +72,9 @@ app.use("/", links_1.default);
 app.use("/", search_1.default);
 app.use("/", fixtures_1.default);
 app.use("/users", users_1.default);
+app.get("*", function (req, res) {
+    return res.status(404).json({ message: "Route does not exists" });
+});
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     next((0, http_errors_1.default)(404));
